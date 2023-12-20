@@ -1,0 +1,14 @@
+{% load static %}
+{% include 'header.html' %}
+<!-- Page header -->
+        <div class="page-header d-none">
+          <div class="container-xl">
+            {% block page-header %}{% endblock page-header %}
+          </div>
+        </div>
+        <!-- Page body -->
+        <div class="page-body">
+          <div class="container-xl">
+            {% block page-content %}{% endblock page-content %}
+            {% block additional-js %}{% endblock additional-js %}
+{% include 'footer.html' %}

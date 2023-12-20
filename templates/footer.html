@@ -1,0 +1,34 @@
+{% load static %}
+</div>
+</div>
+<footer class="footer footer-transparent d-print-none">
+  <div class="container-xl">
+    <div class="row text-center align-items-center flex-row-reverse">
+      <div class="col-12 col-lg-auto mt-3 mt-lg-0">
+        <ul class="list-inline list-inline-dots mb-0">
+          <li class="list-inline-item">
+            Copyright &copy; 2023
+            <a href="." class="link-secondary">CertoMeter</a>.
+            All rights reserved.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+</div>
+</div>
+<!-- Libs JS -->
+<script src="{% static '/dist/libs/apexcharts/dist/apexcharts.min.js' %}" defer></script>
+<script src="{% static '/dist/libs/jsvectormap/dist/js/jsvectormap.min.js' %}" defer></script>
+<script src="{% static '/dist/libs/jsvectormap/dist/maps/world.js' %}" defer></script>
+<script src="{% static '/dist/libs/jsvectormap/dist/maps/world-merc.js' %}" defer></script>
+<!-- Tabler Core -->
+<script src="{% static '/dist/js/tabler.js' %}" defer></script>
+{% comment %} <script src="{% static '/dist/js/demo.min.js' %}" defer></script> {% endcomment %}
+
+<!-- custom JS -->
+<script src="{% static '/assets/js/custom.js' %}"></script>
+{% block additional-js %}{% endblock additional-js %}
+</body>
+</html>
